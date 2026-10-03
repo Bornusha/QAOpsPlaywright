@@ -21,7 +21,7 @@ test(`Client App login ${data.productName}`, async ({page}) =>
 });
 }
 
-customtest.only(`Client App login`, async ({page, testDataForOrder}) =>
+customtest(`Client App login`, async ({page, testDataForOrder}) =>
 {
    const poManager = new POManager(page);
    const products = page.locator(".card-body");
