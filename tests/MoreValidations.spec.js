@@ -14,7 +14,7 @@ await expect(page.locator("#displayed-text")).toBeHidden();
 );
 
 
-test.only('visual',async({page}) =>
+test('visual',async({page}) =>
 {
 await page.goto("https://www.google.com/");
 expect (await page.screenshot()).toMatchSnapshot('landing.png');
